@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 2,
+  "dockerfileLines": [
+    "FROM litestream/litestream:latest",
+    "COPY litestream.yml /etc/litestream.yml",
+    "CMD [\"litestream\", \"replicate\", \"-config\", \"/etc/litestream.yml\"]"
+  ]
+}
