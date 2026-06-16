@@ -2,6 +2,7 @@
   "schemaVersion": 2,
   "dockerfileLines": [
     "FROM litestream/litestream:latest",
+    "USER root",
     "COPY litestream.yml /etc/litestream.yml",
     "CMD [\"replicate\", \"-config\", \"/etc/litestream.yml\", \"-no-expand-env\"]"
   ]

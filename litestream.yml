@@ -3,6 +3,6 @@ dbs:
   - path: /data/db.sqlite
     replicas:
       - type: gs
-        bucket: YOUR_GCS_BUCKET_NAME
+        bucket: YOUR_GCS_BUCKET_NAME # <-- REPLACE THIS WITH YOUR ACTUAL BUCKET NAME
         path: headscale
         credentials-file: /etc/litestream/gcp-credentials.json
