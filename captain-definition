@@ -3,7 +3,6 @@
   "dockerfileLines": [
     "FROM litestream/litestream:latest",
     "COPY litestream.yml /etc/litestream.yml",
-    "ENTRYPOINT []",
-    "CMD [\"tail\", \"-f\", \"/dev/null\"]"
+    "CMD [\"replicate\", \"-config\", \"/etc/litestream.yml\", \"-no-expand-env\"]"
   ]
 }
