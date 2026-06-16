@@ -5,4 +5,4 @@ dbs:
       - type: gs
         bucket: solex-storage
         path: headscale
-        credentials-file: /etc/litestream/gcp-credentials.json
+        credentials-file: /data/gcp-credentials.json
