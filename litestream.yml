@@ -1,4 +1,10 @@
 addr: ":9090"
+
+# Global snapshot and retention settings
+snapshot:
+  interval: 24h       # Take a full snapshot every 24 hours
+  retention: 720h     # Keep snapshots and logs for 30 days (safe against long outages)
+
 dbs:
   - path: /data/db.sqlite
     replicas:
