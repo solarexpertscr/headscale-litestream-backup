@@ -2,7 +2,7 @@ addr: ":9090"
 dbs:
   - path: /data/db.sqlite
     replicas:
-      - type: gcs
+      - type: gs
         bucket: YOUR_GCS_BUCKET_NAME
         path: headscale
         credentials-file: /etc/litestream/gcp-credentials.json
